@@ -54,3 +54,34 @@ Consigli del giorno:
    Buon lavoro e buon divertimento!
 
 ## svolgimento
+
+- recuperare gli elementi necessari dal html in costanti
+- inizializo un array con il nome delle immagini
+
+- **FOR** ogni nome immagine nel mio array
+
+  - **IF** la mia slide è la prima
+    - assegno il display block
+  - creo l'elemento img html e lo assegno all'inner html del elemento padre contenitore con classe carousel. saranno tutte con display none
+
+- importo gli elementi slide in una costante array
+- inizializo un indice contatore per le slide
+
+- creo un evento al clic della freccia next
+  <!-- - far sparire la slide precedente -->
+
+  - assegnare la classe display none alla slide precedente
+  <!-- se la ultima slide impostare l'indice delle slide a 0 -->
+  - **IF** il mio indice delle slide è uguale alla lunghezza dell'array dei elementi slide -1 => riassegno il valore 0
+  - **else** incremento l'indice delle slide
+  <!-- - mostrare la slide seguente -->
+  - assegnare la classe display block alla slide successiva
+
+- creo un evento al clic della freccia prev
+   <!-- - far sparire la slide precedente -->
+  - assegnare la classe display none alla slide precedente
+  <!-- se la ultima slide impostare l'indice delle slide a 0 -->
+  - **IF** il mio indice delle slide è uguale 0 => riassegno il valore della lungezza dell array elementi slide -1
+  - **else** decremento l'indice delle slide
+  <!-- - mostrare la slide seguente -->
+  - assegnare la classe display block alla slide successiva
